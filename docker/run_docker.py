@@ -236,7 +236,7 @@ def main(argv):
           # The following flags allow us to make predictions on proteins that
           # would typically be too long to fit into GPU memory.
           'TF_FORCE_UNIFIED_MEMORY': '1',
-          'XLA_PYTHON_CLIENT_MEM_FRACTION': '4.0',
+          'XLA_PYTHON_CLIENT_MEM_FRACTION': '20.0',
       })
 
   # Add signal handler to ensure CTRL+C also stops the running container.
